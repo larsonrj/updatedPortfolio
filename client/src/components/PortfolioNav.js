@@ -2,13 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "../components/css/nav.css";
 
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
 function PortfolioNav({ currentPage, handlePageChange }) {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="p-3 navBar" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand
             href="#home"
@@ -17,7 +18,7 @@ function PortfolioNav({ currentPage, handlePageChange }) {
           >
             Ryan Larson
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="justify-content-end">
             <Nav.Link
               href="#about"
               onClick={() => handlePageChange("About")}
