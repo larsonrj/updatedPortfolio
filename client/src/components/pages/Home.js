@@ -1,8 +1,9 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex-grow-1">
       <h1>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

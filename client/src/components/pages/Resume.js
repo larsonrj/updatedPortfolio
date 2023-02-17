@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div>
+    <div className="flex-grow-1">
       <h1>Resume</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.

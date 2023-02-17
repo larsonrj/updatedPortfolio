@@ -31,7 +31,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="app">
+    <div className="app d-flex flex-column">
       <PortfolioNav
         currentPage={currentPage}
         handlePageChange={handlePageChange}
