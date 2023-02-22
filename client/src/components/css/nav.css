@@ -1,4 +1,16 @@
 .navBar {
   border-bottom: 6px solid #8b2131;
+  font-family: roboto slab, sans-serif;
   height: 10vh;
+  background-color: #232f3e;
+}
+
+#home {
+  color: #fec524;
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  color: white;
 }

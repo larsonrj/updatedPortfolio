@@ -9,16 +9,21 @@ import "../components/css/nav.css";
 function PortfolioNav({ currentPage, handlePageChange }) {
   return (
     <>
-      <Navbar className="p-3 navBar" bg="dark" variant="dark">
+      <Navbar className="p-3 navBar" variant="dark">
         <Container>
-          <Navbar.Brand
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-            className={currentPage === "Home" ? "nav-link active" : "nav-link"}
-          >
-            Ryan Larson
-          </Navbar.Brand>
-          <Nav className="justify-content-end">
+          <Nav>
+            <Nav.Link
+              href="#home"
+              onClick={() => handlePageChange("Home")}
+              className={
+                currentPage === "Home" ? "nav-link active" : "nav-link"
+              }
+              id="home"
+            >
+              Ryan Larson
+            </Nav.Link>
+          </Nav>
+          <Nav className="justify-content-end link">
             <Nav.Link
               href="#about"
               onClick={() => handlePageChange("About")}
