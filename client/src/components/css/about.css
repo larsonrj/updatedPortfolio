@@ -11,5 +11,6 @@
 
 .text {
   color: white;
+  font-family: roboto slab, sans-serif;
   font-size: 2vh;
 }
