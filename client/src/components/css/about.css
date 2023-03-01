@@ -1,0 +1,15 @@
+.home {
+  background-color: #232f3e;
+}
+
+.title {
+  font-family: roboto slab, sans-serif;
+  color: #fec524;
+  font-size: 2.5rem;
+  border-right: 6px solid #8b2131;
+}
+
+.text {
+  color: white;
+  font-size: 2vh;
+}

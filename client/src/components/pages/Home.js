@@ -11,7 +11,7 @@ export default function Home() {
           <div>Ryan Larson</div>
           <div>Full Stack Developer</div>
         </div>
-        <div className="d-flex col-4 h-75 align-self-center">
+        <div className="d-flex col-6 h-75 align-self-center">
           <img
             className="rounded-5 align-self-center h-100 w-100"
             src={prof}
