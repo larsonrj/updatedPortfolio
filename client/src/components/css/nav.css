@@ -5,12 +5,28 @@
   background-color: #232f3e;
 }
 
-#home {
+.home {
   color: #fec524;
-  font-size: 2rem;
+  font-size: 5vh;
+  text-decoration: none;
 }
 
-.nav-link {
-  font-size: 1.25rem;
+.nav-links {
+  font-size: 2vh;
   color: white;
+  text-decoration: none;
+}
+
+.active-link {
+  font-size: 2vh;
+  color: #fec524;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: #8b2131;
+}
+
+.active-link:hover {
+  color: #fec524;
 }
