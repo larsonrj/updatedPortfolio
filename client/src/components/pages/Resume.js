@@ -2,16 +2,19 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div className="flex-grow-1">
-      <h1>Resume</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div className="flex-grow-1 d-flex justify-content-center">
+      <div className="d-flex justify-content-evenly rounded-5 col-8 h-75 home align-self-center">
+        <div className="h-75 col-4 align-self-center title d-flex flex-column justify-content-evenly">
+          <div>Coding Bootcamp</div>
+          <div>Work Experience</div>
+          <div>Education</div>
+        </div>
+        <div className="d-flex text col-6 h-75 align-self-center align-items-center">
+          <ul>
+            <li>Javascript</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
