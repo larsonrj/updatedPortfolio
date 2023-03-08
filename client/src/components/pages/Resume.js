@@ -3,6 +3,10 @@ import React, { useState } from "react";
 export default function Resume() {
   const [currentTab, setCurrentTab] = useState("coding");
 
+  const headerStyle = {
+    color: "#fec524",
+  };
+
   const renderTab = () => {
     if (currentTab === "coding") {
       return (
@@ -27,7 +31,41 @@ export default function Resume() {
       );
     }
     if (currentTab === "work") {
-      return <div>Work</div>;
+      return (
+        <div>
+          <h2 style={headerStyle}>United Launch Alliance</h2>
+          <div>Modeling and Simulations Engineer:</div>
+          <ul>
+            <li>
+              Product Lifecycle Management for the Atlas and Delta programs
+            </li>
+            <li>
+              Performed drawing reviews, 3D modeling and revision control for
+              design deliverables
+            </li>
+            <li>
+              Used NX/Teamcenter and Windchill/Creo for CAD work and
+              drawing/model revision control
+            </li>
+          </ul>
+          <div>Mechanical Engineer:</div>
+          <ul>
+            <li>Mechanical Engineer on Vulcan development program</li>
+            <li>
+              Worked within Agile workflow process throughout development of
+              Vulcan rocket
+            </li>
+            <li>
+              Performed trade studies for mechanical structures design and
+              presented designs to Chief Engineers
+            </li>
+            <li>
+              Engineering support at manufacturing site during initial build of
+              Vulcan Upper Stage
+            </li>
+          </ul>
+        </div>
+      );
     }
     return <div>Education</div>;
   };
