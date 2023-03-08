@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import download from "../images/Resume.pdf";
 
 export default function Resume() {
   const [currentTab, setCurrentTab] = useState("coding");
 
   const headerStyle = {
     color: "#fec524",
+  };
+  const linkStyle = {
+    color: "#8b2131",
   };
 
   const renderTab = () => {
@@ -68,9 +72,8 @@ export default function Resume() {
       );
     }
     return (
-      <div>
+      <div className="align-self-center">
         <h2 style={headerStyle}>Colorado School of Mines</h2>
-        <div>Modeling and Simulations Engineer:</div>
         <ul>
           <li>Master of Science - Mechanical Engineering, May 2014</li>
           <li>Bachelor of Science - Engineering Physics, May 2013</li>
@@ -115,8 +118,14 @@ export default function Resume() {
           >
             Education
           </a>
-          <a href="#resume" className="nav-links align-self-center">
-            Resume
+          <a
+            href={download}
+            className="nav-links align-self-center"
+            style={linkStyle}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download Resume
           </a>
         </div>
         <div className="d-flex text col-6 h-75 align-self-center">
