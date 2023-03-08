@@ -67,7 +67,16 @@ export default function Resume() {
         </div>
       );
     }
-    return <div>Education</div>;
+    return (
+      <div>
+        <h2 style={headerStyle}>Colorado School of Mines</h2>
+        <div>Modeling and Simulations Engineer:</div>
+        <ul>
+          <li>Master of Science - Mechanical Engineering, May 2014</li>
+          <li>Bachelor of Science - Engineering Physics, May 2013</li>
+        </ul>
+      </div>
+    );
   };
   return (
     <div className="flex-grow-1 d-flex justify-content-center">
