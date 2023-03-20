@@ -1,7 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import "../components/css/nav.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,7 +19,7 @@ function PortfolioNav({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("Home")}
           ></a>
         </div>
-        <div className="d-flex col-6 justify-content-end text-end">
+        <div className="d-flex col-6 justify-content-end media">
           <a
             href="#about"
             className={

@@ -7,13 +7,13 @@ import du from "../images/du.png";
 export default function Home() {
   return (
     <div className="flex-grow-1 d-flex justify-content-center">
-      <div className="d-flex justify-content-evenly rounded-5 col-8 h-75 home align-self-center">
+      <div className="d-flex justify-content-evenly rounded-5 col-8 h-75 home align-self-center homemob">
         <div className="h-75 col-4 align-self-center align-items-start title d-flex flex-column">
-          <div>Ryan Larson</div>
-          <div>Full Stack Developer</div>
-          <div className="align-self-center mt-auto">
+          <div className="htext">Ryan Larson</div>
+          <div className="htext">Full Stack Developer</div>
+          <div className="align-self-center mt-auto pic">
             <img
-              className="h-100"
+              className="h-75"
               src={du}
               alt="DU Coding Bootcamp Certificate"
             ></img>
